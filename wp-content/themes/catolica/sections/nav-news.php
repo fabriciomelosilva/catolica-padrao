@@ -16,7 +16,7 @@
             <?php echo '<a href="' . get_permalink() . '" title="' . the_title_attribute( 'echo=0' ) . '" rel="">'; ?>
                 <?php the_title( '<h2>', '</h2>' ); 
                 echo '<p>' . substr($content, 0, 219) .'</p>';?>
-                <small>15 NOV 2019</small>
+                <small><?php echo the_time('d M Y'); ?></small>
                 <small>Leia mais</small>
             </a>
         </div>
