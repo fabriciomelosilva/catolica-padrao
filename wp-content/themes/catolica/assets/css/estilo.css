@@ -372,6 +372,10 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  min-height: 181px;
 }
 
 .noticia-cartao h2 {
@@ -379,16 +383,22 @@ footer {
   padding: 0;
   font-family: 'Humnst777 Blk BT';
   font-weight: normal;
+  width: 100%;
 }
 
 .noticia-cartao p {
   margin-top: 0;
+  width: 100%;
 }
 
 .noticia-cartao small {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: bold;
+}
+
+.col-33 .noticia-cartao a {
+  min-height: 130px;
 }
 
 .noticia-cartao:hover,
