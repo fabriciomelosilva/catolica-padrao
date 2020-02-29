@@ -73,8 +73,8 @@ get_template_part('sections/nav', 'index');
 
         <article class="col-40 aside">
 
-            <a href="#" class="btn-pri">Inscreva-se</a>
-            <a href="#" class="btn-sec">Aluno online</a>
+            <a href="<?php echo $GLOBALS["curso_fields"]["inscreva-se"]?>" class="btn-pri">Inscreva-se</a>
+            <a href="<?php echo $GLOBALS["curso_fields"]["aluno_online"]?>" class="btn-sec">Aluno online</a>
 
             <!--<h1>Mais cursos</h1>
 

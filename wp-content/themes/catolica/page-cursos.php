@@ -12,7 +12,7 @@
 <?php
     
     $argsCategory = array(
-        'orderby'                  => 'id',
+        'orderby'                  => 'name',
         'order'                    => 'ASC',
         'parent'                   => 0,
         'hide_empty'               => 0,
