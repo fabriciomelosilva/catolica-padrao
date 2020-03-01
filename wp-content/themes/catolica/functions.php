@@ -204,6 +204,28 @@ function create_posttype_events() {
 }
 add_action( 'init', 'create_posttype_events' );
 
+function catolica_change_post_label() {
+    global $menu;
+    global $submenu;
+    $menu[5][0] = 'Cursos';
+    $submenu['edit.php'][5][0] = 'Cursos';
+    $submenu['edit.php'][10][0] = 'Adicionar cursos';
+}
+function catolica_change_post_object() {
+    global $wp_post_types;
+    $labels = &$wp_post_types['post']->labels;
+    $labels->name = 'Cursos';
+    $labels->singular_name = 'Cursos';
+
+    $labels->not_found_in_trash = 'Nenhum curso encontrado na lixeira';
+    $labels->all_items = 'All Cursos';
+    $labels->menu_name = 'Cursos';
+    $labels->name_admin_bar = 'Cursos';
+}
+ 
+add_action( 'admin_menu', 'catolica_change_post_label' );
+add_action( 'init', 'catolica_change_post_object' );
+
 
 
 

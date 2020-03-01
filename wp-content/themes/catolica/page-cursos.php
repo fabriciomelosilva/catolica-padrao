@@ -16,8 +16,7 @@
         'order'                    => 'ASC',
         'parent'                   => 0,
         'hide_empty'               => 0,
-        'exclude'        => '1' 
-
+        'exclude'                  => '1' 
 
     ); 
 ?>
@@ -52,12 +51,15 @@
                     <div class="panel">
 
                     <?php
-                        $subcat_posts = get_posts('cat=' . $category->term_id);                     
+                        $subcat_posts = get_posts('cat=' . $category->term_id);
+                        
+                        //var_dump($subcat_posts);
                         foreach($subcat_posts as $subcat_post) :
-                            $postID = $subcat_post->ID;
-                        endforeach;
-                    ?>
-                        <p><a href="<?php echo get_permalink($postID); ?>"><?php echo get_the_title($postID);?> </a></p>
+                            $postID = $subcat_post->ID; ?>
+                             <p><a href="<?php echo get_permalink($postID); ?>"><?php echo get_the_title($postID);?> </a></p>
+
+                        <?php endforeach; ?>
+                
                     </div>
                 </div>
 
@@ -67,13 +69,11 @@
     </div>
 
         <?php
-            $meta_image = get_wp_term_image($term_id);
-                        
-            $meta_image_ = explode("http://", $meta_image);
+            $meta_image = get_wp_term_image($term_id); 
         ?>
 
     <div class="bg-cartao">
-        <img src="<?php echo "https://".$meta_image[1]; ?>" alt="">
+        <img src="<?php echo $meta_image; ?>" alt="">
     </div>
 
 </article>
