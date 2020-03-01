@@ -57,6 +57,9 @@
 
 
 <?php if ($post_type == 'eventos') : ?>
+
+<?php get_template_part('sections/nav', 'getfields'); ?>
+
 	<main>
     <section>
 		<h5 class="col-100 center">Eventos</h5>

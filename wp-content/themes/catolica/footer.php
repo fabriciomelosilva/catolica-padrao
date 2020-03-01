@@ -32,7 +32,20 @@
             ?>
 
             <li><a href="<?php echo ($url_solicitar_certificado_de_eventos) ? $url_solicitar_certificado_de_eventos : $arquivo_solicitar_certificado_de_eventos; ?>" target="_blank">Solicitar certificado de eventos</a></li>
-            <li><a href="#" target="_blank">Calendário acadêmico</a></li>
+            
+            
+            <?php
+                $url_calendario_academico = null;
+                $arquivo_calendario_academico = null;
+
+                if ($GLOBALS["academico_fields"]["url_calendario_academico"]) :
+                    $url_calendario_academico = $GLOBALS["academico_fields"]["url_calendario_academico"];
+                else:
+                    $arquivo_calendario_academico = $GLOBALS["academico_fields"]["arquivo_calendario_academico"];
+                endif;
+            ?>
+            
+            <li><a href="<?php echo ($url_calendario_academico) ? $url_calendario_academico : $arquivo_calendario_academico; ?>" target="_blank">Calendário acadêmico</a></li>
         </ul>
 
     </article>
@@ -55,8 +68,36 @@
             ?>
 
             <li><a href="<?php echo ($url_bolsas_e_financiamentos) ? $url_bolsas_e_financiamentos : $aquivo_bolsas_e_financiamentos; ?>" target="_blank">Bolsas e financiamentos</a></li>
-            <li><a href="#" target="_blank">Manual institucional</a></li>
-            <li><a href="#" target="_blank">Regulamentos institucionais</a></li>
+            
+            <?php
+
+                $url_manual_institucional = null;
+                $arquivo_manual_institucional = null;
+
+                if ($GLOBALS["documentos_fields"]["url_manual_institucional"]) :
+                    $url_manual_institucional = $GLOBALS["documentos_fields"]["url_manual_institucional"];
+                else:
+                    $arquivo_manual_institucional = $GLOBALS["documentos_fields"]["arquivo_manual_institucional"];
+                endif;
+            ?>
+            
+            <li><a href="<?php echo ($url_manual_institucional) ? $url_manual_institucional : $arquivo_manual_institucional; ?>" target="_blank">Manual institucional</a></li>
+            
+            
+            <?php
+
+                $url_regulamentos_institucionais = null;
+                $arquivo_regulamentos_institucionais = null;
+
+                if ($GLOBALS["documentos_fields"]["url_regulamentos_institucionais"]) :
+                    $url_regulamentos_institucionais = $GLOBALS["documentos_fields"]["url_regulamentos_institucionais"];
+                else:
+                    $arquivo_regulamentos_institucionais = $GLOBALS["documentos_fields"]["arquivo_regulamentos_institucionais"];
+                endif;
+            
+            ?>
+            
+            <li><a href="<?php echo ($url_regulamentos_institucionais) ? $url_regulamentos_institucionais : $arquivo_regulamentos_institucionais; ?>" target="_blank">Regulamentos institucionais</a></li>
         </ul>
 
     </article>
@@ -65,9 +106,52 @@
 
         <ul>
             <li>Publicações</li>
-            <li><a href="#" target="_blank">Revista científica IES</a></li>
-            <li><a href="#" target="_blank">Revista científica dos cursos</a></li>
-            <li><a href="#" target="_blank">Acervo científico</a></li>
+
+            <?php
+
+                $url_revista_cientifica_ies = null;
+                $arquivo_revista_cientifica_ies = null;
+
+                if ($GLOBALS["publicacoes_fields"]["url_revista_cientifica_ies"]) :
+                    $url_revista_cientifica_ies = $GLOBALS["publicacoes_fields"]["url_revista_cientifica_ies"];
+                else:
+                    $arquivo_revista_cientifica_ies = $GLOBALS["publicacoes_fields"]["arquivo_revista_cientifica_ies"];
+                endif;
+
+            ?>
+
+            <li><a href="<?php echo ($url_revista_cientifica_ies) ? $url_revista_cientifica_ies : $arquivo_revista_cientifica_ies; ?>" target="_blank">Revista científica IES</a></li>
+            
+            <?php
+
+                $url_revista_cientifica_dos_cursos = null;
+                $arquivo_revista_cientifica_dos_cursos = null;
+
+                if ($GLOBALS["publicacoes_fields"]["url_revista_cientifica_dos_cursos"]) :
+                    $url_revista_cientifica_dos_cursos = $GLOBALS["publicacoes_fields"]["url_revista_cientifica_dos_cursos"];
+                else:
+                    $arquivo_revista_cientifica_dos_cursos = $GLOBALS["publicacoes_fields"]["arquivo_revista_cientifica_dos_cursos"];
+                endif;
+
+            ?>
+            
+            <li><a href="<?php echo ($url_revista_cientifica_dos_cursos) ? $url_revista_cientifica_dos_cursos : $arquivo_revista_cientifica_dos_cursos; ?>" target="_blank">Revista científica dos cursos</a></li>
+            
+            
+            <?php
+
+                $url_acervo_cientifico = null;
+                $arquivo_acervo_cientifico = null;
+
+                if ($GLOBALS["publicacoes_fields"]["url_acervo_cientifico"]) :
+                    $url_acervo_cientifico = $GLOBALS["publicacoes_fields"]["url_acervo_cientifico"];
+                else:
+                    $arquivo_acervo_cientifico = $GLOBALS["publicacoes_fields"]["arquivo_acervo_cientifico"];
+                endif;
+
+            ?>
+            
+            <li><a href="<?php echo ($url_acervo_cientifico) ? $url_acervo_cientifico : $arquivo_acervo_cientifico; ?>" target="_blank">Acervo científico</a></li>
         </ul>
 
     </article>
@@ -76,8 +160,37 @@
 
         <ul>
             <li>Links úteis</li>
-            <li><a href="#" target="_blank">Núcleo de Apoio Psicopedagógico</a></li>
-            <li><a href="#" target="_blank">Comitê de Ética em Pesquisa com seres humanos</a></li>
+
+            <?php
+
+                $url_nucleo_de_apoio_psicopedagogico = null;
+                $arquivo_nucleo_de_apoio_psicopedagogico = null;
+
+                if ($GLOBALS["links_fields"]["url_nucleo_de_apoio_psicopedagogico"]) :
+                    $url_nucleo_de_apoio_psicopedagogico = $GLOBALS["links_fields"]["url_nucleo_de_apoio_psicopedagogico"];
+                else:
+                    $arquivo_nucleo_de_apoio_psicopedagogico = $GLOBALS["links_fields"]["arquivo_nucleo_de_apoio_psicopedagogico"];
+                endif;
+
+            ?>
+
+            <li><a href="<?php echo ($url_nucleo_de_apoio_psicopedagogico) ? $url_nucleo_de_apoio_psicopedagogico : $arquivo_nucleo_de_apoio_psicopedagogico; ?>" target="_blank">Núcleo de Apoio Psicopedagógico</a></li>
+            
+            
+            <?php
+
+                $url_comite_de_etica_em_pesquisa_com_seres_humanos = null;
+                $arquivo_comite_de_etica_em_pesquisa_com_seres_humanos = null;
+
+                if ($GLOBALS["links_fields"]["url_comite_de_etica_em_pesquisa_com_seres_humanos"]) :
+                    $url_comite_de_etica_em_pesquisa_com_seres_humanos = $GLOBALS["links_fields"]["url_comite_de_etica_em_pesquisa_com_seres_humanos"];
+                else:
+                    $arquivo_comite_de_etica_em_pesquisa_com_seres_humanos = $GLOBALS["links_fields"]["arquivo_comite_de_etica_em_pesquisa_com_seres_humanos"];
+                endif;
+
+            ?>
+
+            <li><a href="<?php echo ($url_comite_de_etica_em_pesquisa_com_seres_humanos) ? $url_comite_de_etica_em_pesquisa_com_seres_humanos : $arquivo_comite_de_etica_em_pesquisa_com_seres_humanos; ?>" target="_blank">Comitê de Ética em Pesquisa com seres humanos</a></li>
             
         </ul>
 

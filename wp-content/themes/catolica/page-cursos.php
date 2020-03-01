@@ -67,11 +67,13 @@
     </div>
 
         <?php
-            $meta_image = get_wp_term_image($term_id); 
+            $meta_image = get_wp_term_image($term_id);
+                        
+            $meta_image_ = explode("http://", $meta_image);
         ?>
 
     <div class="bg-cartao">
-        <img src="<?php echo $meta_image; ?>" alt="">
+        <img src="<?php echo "https://".$meta_image[1]; ?>" alt="">
     </div>
 
 </article>
