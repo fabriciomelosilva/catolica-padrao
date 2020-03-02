@@ -1,3 +1,8 @@
+<?php 
+    $parse_uri = explode('wp-content', $_SERVER['SCRIPT_FILENAME']);
+    require_once($parse_uri[0] . 'wp-load.php');
+?>
+
 <div class="col-100">
 
     <h1 class="center">Áreas de contato</h1>
@@ -26,6 +31,6 @@
 
     </div>
 
-    <div class="col-100"><a href="<?php echo "http://localhost/faculdade-catolica/wp-content/themes/catolica/modal/contato.php" ?>" rel="modal:open" class="btn-sec center">Voltar para o formulário</a></div>
+    <div class="col-100"><a href="<?php echo get_template_directory_uri() . '/modal/contato.php'; ?>" rel="modal:open" class="btn-sec center">Voltar para o formulário</a></div>
 
 </div>

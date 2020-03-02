@@ -14,7 +14,7 @@
             <li><a href="<?php echo get_page_link( get_page_by_path( 'eventos' ) ); ?>">Eventos</a></li>
             <li><a href="#">Biblioteca</a></li>
 
-            <li><a href="<?php echo $GLOBALS["fields_botoes_menu"]["inscreva-se"]; ?>" rel="modal:open" class="btn-sec">Inscreva-se</a></li>
+            <li><a href="<?php echo get_template_directory_uri() . '/modal/inscrevase.php'; ?>" rel="modal:open" class="btn-sec">Inscreva-se</a></li>
             <li><a href="<?php echo $GLOBALS["fields_botoes_menu"]["aluno_online"]; ?>" class="btn-pri" target="_blank">Aluno online</a></li>
         </ul>
 
