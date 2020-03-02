@@ -227,8 +227,8 @@
                     <li><a href="#"><img src="<?php echo get_template_directory_uri() .'/assets/img/icone-wpp.png'; ?>" alt=""></a> <a href="#"><img src="<?php echo get_template_directory_uri() .'/assets/img/icone-face.png'; ?>" alt=""></a></li>
                 </ul>
             </li>
-            <li><a href="modal/trabalhe.php" rel="modal:open">Trabalhe conosco</a></li>
-            <li><a href="modal/contato.php" rel="modal:open">Fale conosco</a></li>
+            <li><a href="<?php echo get_template_directory_uri() . '/modal/trabalhe.php'; ?>" rel="modal:open">Trabalhe conosco</a></li>
+            <li><a href="<?php echo get_template_directory_uri() . '/modal/contato.php'; ?>" rel="modal:open">Fale conosco</a></li>
         </ul>
 
     </article>
