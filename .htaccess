@@ -5,11 +5,11 @@
 # Quaisquer alterações nas diretivas entre esses marcadores serão sobrescritas.
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /faculdade-catolica/
+RewriteBase /catolica-padrao/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /faculdade-catolica/index.php [L]
+RewriteRule . /catolica-padrao/index.php [L]
 </IfModule>
 
 # END WordPress

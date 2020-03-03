@@ -227,9 +227,13 @@
                     <li><a href="#"><img src="<?php echo get_template_directory_uri() .'/assets/img/icone-wpp.png'; ?>" alt=""></a> <a href="#"><img src="<?php echo get_template_directory_uri() .'/assets/img/icone-face.png'; ?>" alt=""></a></li>
                 </ul>
             </li>
-            <li><a href="<?php echo get_template_directory_uri() . '/modal/trabalhe.php'; ?>" rel="modal:open">Trabalhe conosco</a></li>
-            <li><a href="<?php echo get_template_directory_uri() . '/modal/contato.php'; ?>" rel="modal:open">Fale conosco</a></li>
+            <li><a href="#trabalhe-conosco" rel="modal:open" onclick=modelEvent(event)>Trabalhe conosco</a></li>
+            <li><a href="#fale-conosco"     rel="modal:open" onclick=modelEvent(event)>Fale conosco</a></li>
         </ul>
+
+    <?php get_template_part('modal/trabalhe'); ?>
+	<?php get_template_part('modal/contato'); ?>
+	<?php get_template_part('modal/inscrevase'); ?>
 
     </article>
 
@@ -246,7 +250,8 @@
 
 <?php wp_footer(); ?>
 
-	<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() . '/assets/js/jquery.js' ?>"></script>
+    <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() . '/assets/js/jquery.js' ?>"></script>
+    <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() . '/assets/js/jquery.validate.min.js' ?>"></script>
 	<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() . '/assets/js/slick.min.js' ?>"></script>
 	<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() . '/assets/js/modal.js' ?>"></script>
 	<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() . '/assets/js/funcoes.js' ?>"></script>

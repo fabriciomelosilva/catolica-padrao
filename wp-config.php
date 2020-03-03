@@ -26,7 +26,7 @@ define( 'DB_NAME', 'catolica_3' );
 define( 'DB_USER', 'root' );
 
 /** Senha do banco de dados MySQL */
-define( 'DB_PASSWORD', '' );
+define( 'DB_PASSWORD', 'root' );
 
 /** Nome do host do MySQL */
 define( 'DB_HOST', 'localhost' );
@@ -83,6 +83,8 @@ $table_prefix = 'wp_';
  * @link https://codex.wordpress.org/pt-br:Depura%C3%A7%C3%A3o_no_WordPress
  */
 define('WP_DEBUG', false);
+
+define ('WPLANG', 'pt_BR');
 
 /* Isto é tudo, pode parar de editar! :) */
 

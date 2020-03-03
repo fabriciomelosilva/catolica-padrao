@@ -31,6 +31,6 @@
 
     </div>
 
-    <div class="col-100"><a href="<?php echo get_template_directory_uri() . '/modal/contato.php'; ?>" rel="modal:open" class="btn-sec center">Voltar para o formulário</a></div>
+    <div class="col-100"><a  href="#fale-conosco" rel="modal:open" class="btn-sec center">Voltar para o formulário</a></div>
 
 </div>
