@@ -127,10 +127,14 @@
 .wpcf7-response-output.wpcf7-display-none.wpcf7-mail-sent-ok{
     border: none;
     margin: auto;
+    margin-bottom: 20px !important;
+    text-align: center;
+    width: 100%;
 }
 .wpcf7-response-output.wpcf7-display-none.wpcf7-validation-errors{
     border: none;
     margin: auto;
+    margin-bottom: 20px !important;
 }
 
 span.wpcf7-not-valid-tip{
