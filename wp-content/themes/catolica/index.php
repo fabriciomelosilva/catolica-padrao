@@ -18,6 +18,7 @@
 	get_template_part('sections/nav', 'news'); 
 	get_template_part('sections/nav', 'events'); 
 	get_template_part('sections/nav', 'conheca'); 
+	get_template_part('sections/nav', 'cursos'); 
 ?>
 
 
