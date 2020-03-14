@@ -221,10 +221,17 @@
 
     <article class="col-25">
 
+    <?php $countSocialNetworks = count($GLOBALS["icone_rede_social"]); ?>
+
         <ul>
             <li>Contato
                 <ul class="social">
-                    <li><a href="#"><img src="<?php echo get_template_directory_uri() .'/assets/img/icone-wpp.png'; ?>" alt=""></a> <a href="#"><img src="<?php echo get_template_directory_uri() .'/assets/img/icone-face.png'; ?>" alt=""></a></li>
+                    <li>
+                    <?php while($countSocialNetworks >= 0): ?>
+                        <a href="<?php echo $GLOBALS["link_rede_social"][$countSocialNetworks]; ?>"><img src="<?php echo $GLOBALS["icone_rede_social"][$countSocialNetworks]; ?>" alt=""></a> 
+                        <?php $countSocialNetworks--; ?>
+                    <?php endwhile; ?>
+                    </li>
                 </ul>
             </li>
             <li><a href="#trabalhe-conosco" rel="modal:open" onclick=modelEvent(event)>Trabalhe conosco</a></li>

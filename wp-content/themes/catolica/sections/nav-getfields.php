@@ -10,4 +10,12 @@
 
     //single do curso
     $GLOBALS["curso_fields"] = get_field('curso');
+
+    //redes sociais
+    while(the_repeater_field('redes_sociais')): 
+
+        $GLOBALS["icone_rede_social"][] = get_sub_field('icone_rede_social'); 
+        $GLOBALS["link_rede_social"][] = get_sub_field('link_rede_social'); 
+
+    endwhile; 
 ?>
